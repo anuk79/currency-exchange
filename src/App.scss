@@ -1,0 +1,126 @@
+.app-header {
+  width: 100%;
+  background: white;
+  border-bottom: 2px solid #d2d1d1;
+
+  svg {
+    margin-right: 5px;
+    color: var(--primary-color);
+  }
+
+  div {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: white;
+
+    h1 {
+      margin: 10px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+
+    button {
+      border: transparent;
+      background: transparent;
+      font-size: 16px;
+      padding: 20px 10px;
+      text-transform: uppercase;
+
+      &.active {
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 18px;
+      }
+    }
+
+    a {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-left: 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  margin: 32px auto;
+  max-width: 900px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--header-text-color);
+  }
+
+  input,
+  select {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+}
+
+table {
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  height: fit-content;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  th {
+    text-align: justify;
+    color: var(--header-text-color);
+  }
+
+  tr {
+    border-bottom: 1px solid var(--body-color);
+  }
+
+  td, th {
+    padding: 8px;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+}
+
+button,
+input,
+select,
+a {
+  &:focus-visible {
+    outline-color: var(--primary-color);
+  }
+}
+
+button[type="submit"] {
+  &:focus-visible {
+    outline-offset: 3px;
+  }
+}

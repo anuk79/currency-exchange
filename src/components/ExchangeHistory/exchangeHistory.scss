@@ -1,0 +1,58 @@
+.exchange-history-container {
+  border-top: 1px solid lightgray;
+
+  form {
+    display: flex;
+    padding-bottom: 15px;
+
+    select {
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      background: transparent;
+    }
+    label {
+      display: block;
+    }
+  }
+}
+
+.view-options {
+  display: flex;
+  margin-left: 100px;
+  align-items: end;
+
+  label {
+    color: var(--text-color);
+  }
+
+  div:first-child {
+    margin-right: 20px;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+}
+
+.exchange-table-container, .exchange-chart-container {
+  display: flex;
+  padding-bottom: 20px;
+
+  table, section {
+    width: 49%;
+  }
+
+  section {
+    margin-right: 10px;
+  }
+}
+
+.exchange-chart-container {
+  margin-top: 40px;
+}
+
+.chart-labels {
+  text-align: center;
+  font-weight: 400;
+}

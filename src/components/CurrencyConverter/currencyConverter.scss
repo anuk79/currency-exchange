@@ -1,0 +1,51 @@
+.currency-converter-form {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  input, select {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background: transparent;
+  }
+
+  input {
+    border-bottom-width: 1px;
+  }
+
+  select {
+    width: 180px;
+  }
+
+  .swap-btn {
+    height: 40px;
+    background: white;
+    border: 1px solid var(--body-color);
+    align-self: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: var(--primary-color);
+    }
+  }
+
+  button[type="submit"] {
+    height: 40px;
+    text-transform: uppercase;
+    align-self: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: transparent;
+    padding: 0 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}

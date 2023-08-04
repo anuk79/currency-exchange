@@ -1,0 +1,38 @@
+.conversion-history-table {
+  margin: 0;
+  width: 100%;
+
+  .table-btn-container {
+    display: flex;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .view-btn {
+    color: var(--primary-color);
+  }
+
+  .delete-btn {
+    color: var(--danger-color);
+  }
+}
+
+.conversion-history-table {
+  .table-btn-container {
+    visibility: hidden;
+  }
+  tr:hover {
+    .table-btn-container {
+      visibility: visible;
+    }
+  }
+}
